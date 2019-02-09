@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '../client/style/style.css';
 import ApolloClient from 'apollo-client';
 import { ApolloProvider } from 'react-apollo'
 import { Router, Route, hashHistory, IndexRoute } from "react-router";

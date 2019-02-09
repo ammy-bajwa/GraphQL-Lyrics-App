@@ -10,9 +10,9 @@ class SongList extends Component {
         this.props.mutate({
             variables: {
                 id
-            },
-            refetchQueries: [{ query }]
+            }
         }).then((result) => {
+            this.props.data.refetch() //Alternate of refetchQueries property
             console.log(result, ' Del success')
         }).catch((err) => {
             console.log(err)
